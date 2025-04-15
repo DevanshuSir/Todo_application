@@ -93,10 +93,10 @@ function Todo() {
           onClick={handleDarkMode}
         ></i>
 
-        <h1 className={TodoCss.heading}>My Todo Application 😍</h1>
-        <Task Ctask={completeTask} Ttask={totalTask} />
-        <h4> Pending Tasks :- {pendingTask}</h4>
-        <div>
+        <div className={TodoCss.child}>
+          <h1>My Todo Application 😍</h1>
+          <Task Ctask={completeTask} Ttask={totalTask} />
+          <h4> Pending Tasks :- {pendingTask}</h4>
           <Form myTask={task} updateTask={setTask} formFun={handleForm} />
 
           <TodoData allTask={todo_task} taskFun={setTodo_task} />
